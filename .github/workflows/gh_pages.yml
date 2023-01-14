@@ -28,8 +28,8 @@ jobs:
     # build css and rust
     - name: run trunk
       run: |
-      rustup override set nightly
-      trunk build --release
+        rustup override set nightly
+        trunk build --release
 
     # deploy for github.io
     - name: GitHub Pages action
