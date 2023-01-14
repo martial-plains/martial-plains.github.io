@@ -59,7 +59,6 @@ pub fn NavMenu(cx: Scope) -> impl IntoView {
     .expect("Unable to create Style");
 
     let onclick_navbar_button = move |_| {
-        log::info!("{}", open());
         set_open.update(|open| *open = !*open);
     };
 
