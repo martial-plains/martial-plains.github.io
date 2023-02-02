@@ -6,7 +6,7 @@ pub fn ContactPage(cx: Scope) -> impl IntoView {
         <section class="relative pt-24 pb-36 overflow-hidden">
             <div class="relative z-10 container px-4 mx-auto">
             <h2 class="mb-5 text-6xl md:text-8xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none text-slate-900 dark:text-slate-50">{"Contact"}</h2>
-            <p class="mb-20 text-lg text-slate-500 dark:text-slate-400 text-center font-medium leading-normal md:max-w-lg mx-auto">{"I value my time, so make it worth it, and keep it succinct. Please no support questions, job offers, questionnaires, etc."}</p>
+            <p class="mb-20 text-lg text-slate-500 dark:text-slate-400 text-center font-medium leading-normal md:max-w-lg mx-auto">{"I value my time, so make it worth it, and keep it succinct."}</p>
             <div class="flex flex-wrap -m-3">
                 <div class="w-full md:w-3/3 p-3">
                 <div class="p-11 h-full text-center bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl">
