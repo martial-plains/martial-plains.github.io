@@ -81,7 +81,7 @@ pub fn NavMenu(cx: Scope) -> impl IntoView {
                                 <For
                                     each=move || LINK_ITEMS.to_vec()
                                     key=|link| link.id
-                                    view=move |item: LinkItem| {
+                                    view=move |cx, item: LinkItem| {
                                         view! { cx,
                                             <NavMenuItemComponent item />
                                         }
