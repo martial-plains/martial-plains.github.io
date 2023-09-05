@@ -2,8 +2,8 @@ use leptos::*;
 
 /// Renders the home page of the application.
 #[component]
-pub fn HomePage(cx: Scope) -> impl IntoView {
-    view! { cx,
+pub fn HomePage() -> impl IntoView {
+    view! {
         <section class="relative pt-24 pb-36 overflow-hidden">
             <div class="relative z-10 container px-4 mx-auto">
             <img class="w-32 h-32 md:w-48 md:h-auto rounded-full mx-auto" src="/allister-isaiah-harvey.png" alt="" width="384" height="512" />

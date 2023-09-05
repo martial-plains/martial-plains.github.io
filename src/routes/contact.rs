@@ -1,8 +1,8 @@
 use leptos::*;
 
 #[component]
-pub fn ContactPage(cx: Scope) -> impl IntoView {
-    view! { cx,
+pub fn ContactPage() -> impl IntoView {
+    view! {
         <section class="relative pt-24 pb-36 overflow-hidden">
             <div class="relative z-10 container px-4 mx-auto">
             <h2 class="mb-5 text-6xl md:text-8xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none text-slate-900 dark:text-slate-50">{"Contact"}</h2>

@@ -16,29 +16,34 @@ pub struct LinkItem {
 pub const LINK_ITEMS: &[LinkItem] = &[
     LinkItem {
         id: 0,
+        text: "Music",
+        link: "/music",
+    },
+    LinkItem {
+        id: 1,
         text: "Donate",
         link: "/donate",
     },
     LinkItem {
-        id: 1,
+        id: 2,
         text: "About",
         link: "/about",
     },
     LinkItem {
-        id: 2,
+        id: 3,
         text: "Contact",
         link: "/contact",
     },
     LinkItem {
-        id: 3,
+        id: 4,
         text: "Blog",
         link: "https://medium.com/@allisterharvey",
     },
 ];
 
 #[component]
-pub fn NavMenuItemComponent(cx: Scope, item: LinkItem) -> impl IntoView {
-    view! { cx,
+pub fn NavMenuItemComponent(item: LinkItem) -> impl IntoView {
+    view! {
         <li>
                 <a href={item.link} class={"block py-2 pr-4 pl-3 text-gray-700 md:text-base rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent".to_string()}>{item.text}</a>
         </li>
@@ -46,8 +51,8 @@ pub fn NavMenuItemComponent(cx: Scope, item: LinkItem) -> impl IntoView {
 }
 
 #[component]
-pub fn NavMenu(cx: Scope) -> impl IntoView {
-    let (open, set_open) = create_signal(cx, false);
+pub fn NavMenu() -> impl IntoView {
+    let (open, set_open) = create_signal(false);
 
     let glassmorphism = stylist::Style::new(
         r"
@@ -62,7 +67,7 @@ pub fn NavMenu(cx: Scope) -> impl IntoView {
         set_open.update(|open| *open = !*open);
     };
 
-    view! { cx,
+    view! {
         <nav class={format!("{} bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900", glassmorphism.get_class_name())}>
             <div class="container flex flex-wrap justify-between items-center mx-auto">
                 <A href="/" class="flex items-center md:text-xl font-bold".to_string()>
@@ -74,15 +79,15 @@ pub fn NavMenu(cx: Scope) -> impl IntoView {
                 </button>
                 {
                     move ||
-                        view!{ cx,
-                        <div class={format!("{}w-full md:block md:w-auto", if !open() { "hidden "} else { "" })} id="navbar-default">
+                        view!{
+                        <div class={format!("{}w-full md:block md:w-auto", if !open.get() { "hidden "} else { "" })} id="navbar-default">
                             <ul class={format!("{} flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700", glassmorphism.get_class_name())}>
 
                                 <For
                                     each=move || LINK_ITEMS.to_vec()
                                     key=|link| link.id
-                                    view=move |cx, item: LinkItem| {
-                                        view! { cx,
+                                    view=move | item: LinkItem| {
+                                        view! {
                                             <NavMenuItemComponent item />
                                         }
                                     }

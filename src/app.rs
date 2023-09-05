@@ -4,25 +4,25 @@ use leptos_router::*;
 
 use crate::{
     components::nav_menu::*,
-    routes::{about::*, contact::*, donate::*, home::*},
+    routes::{about::*, contact::*, donate::*, home::*, music::*},
 };
 
 #[component]
-pub fn App(cx: Scope) -> impl IntoView {
+pub fn App() -> impl IntoView {
     // Provides context that manages stylesheets, titles, meta tags, etc.
-    provide_meta_context(cx);
+    provide_meta_context();
 
     view! {
-        cx,
         // content for this welcome page
         <Router>
             <NavMenu/>
             <main class="container">
                 <Routes>
-                    <Route path="" view=|cx| view! { cx, <HomePage/> }/>
-                    <Route path="donate" view=|cx| view! { cx, <DonatePage/> }/>
-                    <Route path="about" view=|cx| view! { cx, <AboutPage/> }/>
-                    <Route path="contact" view=|cx| view! { cx, <ContactPage/> }/>
+                    <Route path="" view=|| view! { <HomePage/> }/>
+                    <Route path="music" view=|| view! { <MusicPage/> }/>
+                    <Route path="donate" view=|| view! {  <DonatePage/> }/>
+                    <Route path="about" view=|| view! {  <AboutPage/> }/>
+                    <Route path="contact" view=|| view! {  <ContactPage/> }/>
                 </Routes>
             </main>
         </Router>
