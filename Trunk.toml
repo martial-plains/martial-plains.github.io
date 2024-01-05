@@ -16,5 +16,5 @@ command = "sh"
 # run tailwind build with webpack
 command_arguments = [
     "-c",
-    "[ ! -d \"./node_modules\" ] && deno install || :; deno task build_css",
+    "[ ! -d \"./node_modules\" ] && deno cache dev.ts || :; deno task build_css",
 ]

@@ -7,7 +7,9 @@
         "tailwindcss": "npm:tailwindcss@3.3.5",
         "tailwindcss/": "npm:/tailwindcss@3.3.5/",
         "tailwindcss/plugin": "npm:/tailwindcss@3.3.5/plugin.js",
-        "webpack": "npm:webpack@5.82.1"
+        "webpack": "npm:webpack@5.82.1",
+        "mini-css-extract-plugin": "npm:mini-css-extract-plugin@2.7.5",
+        "css-loader": "npm:css-loader@6.7.3"
     },
     "compilerOptions": {
         "jsx": "react-jsx",
