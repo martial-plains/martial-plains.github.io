@@ -1207,10 +1207,6 @@ video {
     width: auto;
   }
 
-  .md\:max-w-16 {
-    max-width: 4rem;
-  }
-
   .md\:max-w-lg {
     max-width: 32rem;
   }
