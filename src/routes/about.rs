@@ -6,7 +6,7 @@ pub fn AboutPage() -> impl IntoView {
         <section class="relative pt-24 pb-36 overflow-hidden">
             <div class="relative z-10 container px-4 mx-auto">
             <h2 class="mb-5 text-6xl md:text-8xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none text-slate-900 dark:text-slate-50">{"About"}</h2>
-            <p class="mb-20 text-lg text-slate-500 dark:text-slate-400 text-center font-medium leading-normal md:max-w-16  mx-auto">{"I am passionate about becoming a full-time open-source programmer, driven by the desire to contribute to the development of free and open software that can benefit everyone in their day-to-day lives. Programming has always been my true passion, and I find great fulfillment in helping people solve coding challenges, as I believe it not only aids developers but also empowers end users and inspires future learners."}</p>
+            <p class="mb-20 text-lg text-slate-500 dark:text-slate-400 text-center font-medium leading-normal  mx-auto">{"I am passionate about becoming a full-time open-source programmer, driven by the desire to contribute to the development of free and open software that can benefit everyone in their day-to-day lives. Programming has always been my true passion, and I find great fulfillment in helping people solve coding challenges, as I believe it not only aids developers but also empowers end users and inspires future learners."}</p>
             <h3 class="mb-5 text-2xl md:text-6xl xl:text-8xl text-center font-bold font-heading tracking-px-n leading-none text-slate-900 dark:text-slate-50">{"Links"}</h3>
 
             <div class="flex justify-center">
