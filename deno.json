@@ -1,0 +1,17 @@
+{
+    "lock": false,
+    "tasks": {
+        "build_css": "deno run -A npm:tailwindcss -i ./style/tailwind/tailwind_base.css -o ./style/tailwind/dist/tailwind.css && deno run -A npm:webpack-cli"
+    },
+    "imports": {
+        "tailwindcss": "npm:tailwindcss@3.3.5",
+        "tailwindcss/": "npm:/tailwindcss@3.3.5/",
+        "tailwindcss/plugin": "npm:/tailwindcss@3.3.5/plugin.js",
+        "webpack": "npm:webpack@5.82.1"
+    },
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "jsxImportSource": "preact"
+    },
+    "nodeModulesDir": true
+}

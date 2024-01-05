@@ -8,34 +8,28 @@ pub enum Msg {
 
 #[derive(Debug, Clone, Copy)]
 pub struct LinkItem {
-    id: usize,
     text: &'static str,
     link: &'static str,
 }
 
 pub const LINK_ITEMS: &[LinkItem] = &[
     LinkItem {
-        id: 0,
         text: "Music",
         link: "/music",
     },
     LinkItem {
-        id: 1,
         text: "Donate",
         link: "/donate",
     },
     LinkItem {
-        id: 2,
         text: "About",
         link: "/about",
     },
     LinkItem {
-        id: 3,
         text: "Contact",
         link: "/contact",
     },
     LinkItem {
-        id: 4,
         text: "Blog",
         link: "https://medium.com/@allisterharvey",
     },
@@ -83,15 +77,12 @@ pub fn NavMenu() -> impl IntoView {
                         <div class={format!("{}w-full md:block md:w-auto", if !open.get() { "hidden "} else { "" })} id="navbar-default">
                             <ul class={format!("{} flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700", glassmorphism.get_class_name())}>
 
-                                <For
-                                    each=move || LINK_ITEMS.to_vec()
-                                    key=|link| link.id
-                                    view=move | item: LinkItem| {
-                                        view! {
-                                            <NavMenuItemComponent item />
-                                        }
-                                    }
-                                />
+                                {
+                                    LINK_ITEMS.iter().map(|item| {
+                                    view! {
+                                        <NavMenuItemComponent item={*item} />
+                                    }}).collect::<Vec<_>>()
+                                }
 
                             </ul>
                         </div>
