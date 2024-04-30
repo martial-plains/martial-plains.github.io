@@ -26,10 +26,6 @@ pub const LINK_ITEMS: &[LinkItem] = &[
         link: "/about",
     },
     LinkItem {
-        text: "Contact",
-        link: "/contact",
-    },
-    LinkItem {
         text: "Blog",
         link: "https://medium.com/@allisterharvey",
     },

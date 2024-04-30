@@ -4,7 +4,7 @@ use leptos_router::*;
 
 use crate::{
     components::nav_menu::*,
-    routes::{about::*, contact::*, donate::*, home::*, music::*},
+    routes::{about::*, donate::*, home::*, music::*},
 };
 
 #[component]
@@ -22,7 +22,6 @@ pub fn App() -> impl IntoView {
                     <Route path="music" view=|| view! { <MusicPage/> }/>
                     <Route path="donate" view=|| view! {  <DonatePage/> }/>
                     <Route path="about" view=|| view! {  <AboutPage/> }/>
-                    <Route path="contact" view=|| view! {  <ContactPage/> }/>
                 </Routes>
             </main>
         </Router>
