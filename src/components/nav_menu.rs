@@ -17,11 +17,10 @@ pub const LINK_ITEMS: &[LinkItem] = &[
         text: "Music",
         link: "/music",
     },
-    // TODO: Remove Donate page
-    // LinkItem {
-    //     text: "Donate",
-    //     link: "/donate",
-    // },
+    LinkItem {
+        text: "Donate",
+        link: "/donate",
+    },
     LinkItem {
         text: "About",
         link: "/about",

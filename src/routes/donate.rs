@@ -13,10 +13,13 @@ pub fn DonatePage() -> impl IntoView {
             </p>
             <h3 class="pt-8 mb-5 text-2xl md:text-4xl font-bold font-heading tracking-tight leading-none text-slate-900 dark:text-slate-50">{"Monthly donations"}</h3>
             <div class="flex">
-                <ul class="rounded-lg w-96 text-gray-900 list-disc">
-                <li>
-                    <A class={"text-slate-900 dark:text-slate-50 text-2xl".to_string()} href="https://www.patreon.com/aiharvey">{"Patreon"}</A>
-                </li>
+                <ul class="rounded-lg w-96 text-gray-900 text-left list-disc">
+                    <li>
+                        <A class={"text-slate-900 dark:text-slate-50 text-2xl".to_string()} href="https://github.com/sponsors/martial-plains">{"GitHub Sponsors"}</A>
+                    </li>
+                    <li>
+                        <A class={"text-slate-900 dark:text-slate-50 text-2xl".to_string()} href="https://www.patreon.com/aiharvey">{"Patreon"}</A>
+                    </li>
                 </ul>
             </div>
             </div>
