@@ -20,7 +20,7 @@ pub fn HomePage() -> impl IntoView {
             <div class="flex space-x-2 justify-center">
                 <div class="max-w-none px-6 flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-6">
                 <div class="flex flex w-full sm:w-auto">
-                    <a href="https://github.com/a-isaiahharvey" class="btn inline-block px-6 pt-2.5 pb-2 bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium text-sm leading-normal uppercase rounded shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out ">
+                    <a href="https://github.com/martial-plains" class="btn inline-block px-6 pt-2.5 pb-2 bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium text-sm leading-normal uppercase rounded shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out ">
                     <i class="fa-brands fa-github"></i>
                     {" GitHub "}
                     </a>
