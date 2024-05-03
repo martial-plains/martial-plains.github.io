@@ -10,21 +10,21 @@ pub fn AboutPage() -> impl IntoView {
             <h3 class="mb-5 text-2xl md:text-6xl xl:text-8xl text-center font-bold font-heading tracking-px-n leading-none text-slate-900 dark:text-slate-50">{"Links"}</h3>
 
             <div class="flex justify-center">
-                <a href="https://github.com/a-isaiahharvey" data-mdb-ripple="true" data-mdb-ripple-color="light" class="btn px-6 py-2.5 mb-2 text-white font-medium text-xs leading-normal rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #333333;">
+                <a href="https://martial-plains.github.io/" data-mdb-ripple="true" data-mdb-ripple-color="light" class="btn px-6 py-2.5 mb-2 text-white font-medium text-xs leading-normal rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #333333;">
                 <i class="fa-brands fa-github"></i>
                 {" GitHub "}
                 </a>
             </div>
 
             <div class="flex justify-center">
-                <a href="https://twitter.com/AllisterIsaiah" data-mdb-ripple="true" data-mdb-ripple-color="light" class="btn px-6 py-2.5 mb-2 text-white font-medium text-xs leading-normal rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #1da1f2;">
+                <a href="https://twitter.com/martial_plains" data-mdb-ripple="true" data-mdb-ripple-color="light" class="btn px-6 py-2.5 mb-2 text-white font-medium text-xs leading-normal rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #1da1f2;">
                 <i class="fa-brands fa-twitter"></i>
                 {" Twitter "}
                 </a>
             </div>
 
             <div class="flex justify-center">
-                <a href="https://www.instagram.com/isaiah.harvey" data-mdb-ripple="true" data-mdb-ripple-color="light" class="btn px-6 py-2.5 mb-2 text-white font-medium text-xs leading-normal rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #E4405F;">
+                <a href="https://www.instagram.com/martial.plains/" data-mdb-ripple="true" data-mdb-ripple-color="light" class="btn px-6 py-2.5 mb-2 text-white font-medium text-xs leading-normal rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #E4405F;">
                 <i class="fa-brands fa-instagram"></i>
                 {" Instagram "}
                 </a>
