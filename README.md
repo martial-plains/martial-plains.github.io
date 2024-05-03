@@ -1,4 +1,4 @@
-## [Allister Isaiah Harvey's Website](https://a-isaiahharvey.github.io)
+## [Allister Isaiah Harvey's Website](https://martial-plains.github.io/)
 
 > Personal website of Allister Isaiah Harvey
 
